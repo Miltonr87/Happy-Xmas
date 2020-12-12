@@ -72,7 +72,7 @@ module.exports = {
       return res.redirect("/orphanages");
     } catch (error) {
       console.log(error);
-      return res.send("Erro no banco de dados");
+      return res.send("Erro no banco de dados. Verifique a localização escolhida no mapa!");
     }
   },
 };
