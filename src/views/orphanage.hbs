@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ orphanage.name }} | Happy</title>
-    
+    <title>{{ orphanage.name }} | Happy Xmas</title>
+
+    <link rel="icon" href="/images/logo-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin="" />
@@ -67,32 +68,32 @@
                 <a 
                 target="_blank"
                 href="http://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.name}}&z=15"> 
-                Ver rotas no Google Maps </a>
+                View directions on Google Maps </a>
               </footer>
             </div>
 
             <hr />
-            <h2> 🎁 Instruções para Presentes </h2>
+            <h2> 🎁 Gift Instructions 🎁 </h2>
             <p> {{orphanage.instructions}}</p>
 
             <div class="open-details">
               <div class="hour">
-                <img src="/images/clock.svg" alt="Horários" />
+                <img src="/images/clock.svg" alt="Hours" />
                 {{orphanage.opening_hours}}
               </div>
 
               {{#if orphanage.open_on_weekends}}
                 <div class="open-on-weekends open">
                   
-                  <img src="/images/info.svg" alt="Informações" />
-                  Atendemos aos finais de semana!
+                  <img src="/images/info.svg" alt="Information" />
+                  Open on weekends!
               
                 </div>
               {{else}}
                 <div class="open-on-weekends closed">
 
-                  <img src="/images/info-red.svg" alt="Informações" />
-                  Não atendemos aos finais de semana!
+                  <img src="/images/info-red.svg" alt="Informations" />
+                  Not open on weekends!
 
                 </div>
               {{/if}}
@@ -103,8 +104,8 @@
             sobre visitas no {{orphanage.name}}"
             target="_blank"
             class="primary-button" type="button">
-              <img src="/images/whatsapp.svg" alt="Chamar no Whats App" />
-              Entrar em contato
+              <img src="/images/whatsapp.svg" alt="Call on Whats App" />
+           Get in touch
             </a>
             
 

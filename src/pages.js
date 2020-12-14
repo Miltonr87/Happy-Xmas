@@ -29,7 +29,7 @@ module.exports = {
       return res.render("orphanage", { orphanage });
     } catch (error) {
       console.log(error);
-      return res.send("Erro no banco de dados");
+      return res.send("Database error");
     }
   },
 
@@ -40,7 +40,7 @@ module.exports = {
       return res.render("orphanages", { orphanages });
     } catch (error) {
       console.log(error);
-      return res.send("Erro no banco de dados");
+      return res.send("Database error");
     }
   },
 
@@ -52,7 +52,7 @@ module.exports = {
     const fields = req.body;
 
     if (Object.values(fields).includes("")) {
-      return res.send("Todos os campos devem ser preenchidos");
+      return res.send("All fields must be filled!");
     }
 
     try {
@@ -72,7 +72,7 @@ module.exports = {
       return res.redirect("/orphanages");
     } catch (error) {
       console.log(error);
-      return res.send("Erro no banco de dados. Verifique a localização escolhida no mapa!");
+      return res.send("Database error. Check the chosen location on the map!");
     }
   },
 };
