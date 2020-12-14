@@ -91,6 +91,7 @@ function toggleSelect(event) {
     input.value = button.dataset.value
     
 }
-  
-  
-  
+
+function validate(event) {
+    
+}

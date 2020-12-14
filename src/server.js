@@ -1,9 +1,9 @@
-// import module dependencies (lib)
+// importar dependências dos módulos (lib)
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
 
-// Starting Express
+// iniciando o express
 const server = express()
 server
     //utilizar body do req

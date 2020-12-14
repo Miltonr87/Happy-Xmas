@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Add an Orphanage | Happy Xmas</title>
+    <title>Adicionar um Orfanato | Happy</title>
     
-    <link rel="icon" href="/images/logo-icon.png">
-    <link rel="icon" href="/images/logo-icon.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin="" />
@@ -46,7 +44,7 @@
       <main class="animate-appear with-sidebar">
         <form action="save-orphanage" method="post" onsubmit="validate(event)"> 
           <fieldset>
-            <legend> Data </legend>
+            <legend> Dados </legend>
 
             <div class="map-container">
             <div id="mapid"></div>
@@ -55,69 +53,69 @@
 
             <footer>
               <a href="#" id="select-point">
-                Click on the map to add the location!
+                Clique no mapa para adicionar a localização
               </a>
             </footer>
               </div>
               
               <div class="input-block">
-                  <label for="name"> Name </label>
+                  <label for="name"> Nome </label>
                   <input id="name" name="name" required>
               </div>
           
 
               <div class="input-block">
-                <label for="about"> About <span> 300 characters maximum </span></label>
+                <label for="about"> Sobre <span> Máximo de 300 caracteres </span></label>
                 <textarea id="about" name="about" required></textarea>
               </div>
 
               <div class="input-block">
-                <label for="whatsapp"> Whats App Number </label>
+                <label for="whatsapp"> Número de Whats App </label>
                 <textarea id="whatsapp" whatsapp="whatsapp" required></textarea>
               </div>
 
               <div class="input-block images">
-                <label for="images"> Photo </label>
+                <label for="images"> Foto </label>
 
                 
                 
                 <div class="images-upload" id="images"> 
                   
                   <div class="new-upload">
-                  <input name="images" placeholder="Paste the photo link here" type="url" required>
-                  <span onclick="deleteField(event)"> <img src="/images/remove-file.svg" alt="Remove Photo"> </span></div>
+                  <input name="images" placeholder="Cole o link da foto aqui" type="url" required>
+                  <span onclick="deleteField(event)"> <img src="/images/remove-file.svg" alt="Remover Foto"> </span></div>
                 </div>  
                   
                 
                 <button onclick="addPhotoField()" type="button">
-                    <img src="/images/add-file.svg" alt="Add New Photo">
+                    <img src="/images/add-file.svg" alt="Adicionar Nova Imagem">
                 </button>
               </div>
           </fieldset>
                   
           <fieldset>
-              <legend> Visitation </legend>
+              <legend> Visitação </legend>
                 
                 <div class="input-block">
-                  <label for="instructions"> 🎁 Gift Instructions 🎁 </label>
+                  <label for="instructions"> 🎁 Instruções para Presentes  </label>
                   <textarea id="instructions" name="instructions" required></textarea>
                 </div>
                     
                 <div class="input-block">
-                  <label for="opening_hours"> Opening Hours </label>
+                  <label for="opening_hours"> Horário das Visitas </label>
                   <input id="opening_hours" name="opening_hours" required>
                 </div>
                     
                 <div class="input-block">
-                  <label for="open_on_weekends"> Is It Open On Weekends? </label>
+                  <label for="open_on_weekends"> Atende Fim de Semana? </label>
                   <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1" required/>
                     
                 <div class="button-select">
-                  <button data-value="1" onclick="toggleSelect(event)" type="button" class="active"> Yes </button>
-                  <button data-value="0" onclick="toggleSelect(event)" type="button"> No </button>
+                  <button data-value="1" onclick="toggleSelect(event)" type="button" class="active"> Sim </button>
+                  <button data-value="0" onclick="toggleSelect(event)" type="button"> Não </button>
                 </div>
                     
-                  <button type="submit" class="primary-button"> Confirm </button>
+                  <button type="submit" class="primary-button"> Confirmar </button>
                     
                 </div>
                     
