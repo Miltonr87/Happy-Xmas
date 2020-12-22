@@ -38,4 +38,8 @@ aside.sidebar footer button:hover {
     aside.sidebar {
         width: 17%;
     }
+
+    .with-sidebar {
+        padding-left: 150px;
+    }
 }
