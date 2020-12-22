@@ -20,18 +20,15 @@
 
 .location {
     animation-delay: 100ms;
-    text-shadow: 3px 3px 0 #1b1c17;
 }
 
 main h1 {
     animation-delay: 150ms;
     font-size: clamp(4rem, 8vw, 8.4rem);
-    text-shadow: 3px 3px 0 #1b1c17;
 }
 
 .visit p {
     animation-delay: 200ms;
-    text-shadow: 3px 3px 0 #1b1c17;
 }
 
 .visit a {
@@ -56,9 +53,11 @@ main h1 {
     background: #a10000;
 }
 
-/* Desktop Version */
+/*=========================================
+              Mobile Version
+=========================================*/
 
-@media (min-width: 760px) {
+@media (min-width: 780px) {
     #container {
         padding: 5rem 2rem;
         /* Shorthand background: image repeat position / size */

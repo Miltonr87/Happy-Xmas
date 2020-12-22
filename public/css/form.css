@@ -105,3 +105,13 @@ fieldset legend {
     border-radius: 10px;
     cursor: pointer;
 }
+
+/*=========================================
+              Mobile Version
+=========================================*/
+
+@media (max-width: 780px) {
+    form {
+        width: 100%;
+    }
+}
