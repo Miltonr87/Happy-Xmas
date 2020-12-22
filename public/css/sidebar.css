@@ -1,33 +1,10 @@
 aside.sidebar {
     position: fixed;
-    height: 100%;
     padding: 3.2rem 2.4rem; 
     background: linear-gradient(329.54deg, #cc231e 0%, #610606 100%);
     display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-}
-
-aside.sidebar footer button {
-    width: 58px;
-    height: 58px;
-    border: none;
-    background: #ff6666;
-    border-radius: 1.6rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s;
-}
-
-aside.sidebar footer button:hover {
-    background: #a10000;
-}
-
-.with-sidebar {
-    padding-left: 110px;
 }
 
 /*=========================================
@@ -37,9 +14,5 @@ aside.sidebar footer button:hover {
 @media (max-width: 780px) {
     aside.sidebar {
         width: 17%;
-    }
-
-    .with-sidebar {
-        padding-left: 150px;
     }
 }

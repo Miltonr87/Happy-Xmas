@@ -10,7 +10,7 @@ main {
 /* Details */
 
 .orphanage-details {
-    width: 70rem;
+    
     margin: 6.4rem auto;
     background: white;
     border: 1px solid #d3e2e5;
@@ -67,9 +67,10 @@ main {
 }
 
 .orphanage-details-content p{
-    line-height: 1.6;
+    line-height: 1.4;
     color: #5c8599;
     margin-top: 2.4rem;
+    text-align: justify;
 }
 
 .orphanage-details-content hr {
@@ -82,7 +83,6 @@ main {
 
 .orphanage-details-content h2 {
     font-size: 3.6rem;
-    line-height: 1.5rem;
     color: #4d6f80;
 }
 
@@ -109,6 +109,7 @@ main {
     border: 1px solid #83dae2;
     border-radius: 20px;
     color: #5c8599;
+    margin-bottom: 2rem;
 }
 
 .open-details .open-on-weekends {
@@ -127,3 +128,37 @@ main {
     border: 1px solid #ffbcd4;
     color: #ff999d;
 }
+
+/*=========================================
+        Mobile / Desktop Adjusts
+=========================================*/
+
+@media (max-width: 768px) {
+
+    .orphanage-details {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    }
+
+    .orphanage-details-content {
+        padding: 4rem;
+    }
+
+    .orphanage-details-content h1 {
+        font-size: 3.6rem;
+    }
+
+    .open-details {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .orphanage-details {
+    margin-left: 19rem;
+    margin-right: 19rem;
+    }
+
+    .orphanage-details-content {
+        padding: 8rem;
+    }

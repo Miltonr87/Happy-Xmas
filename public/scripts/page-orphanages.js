@@ -1,12 +1,3 @@
-
-// Tipos de Dados:
-// String ""
-// Number 01
-// Object {}
-// Boolean true or false
-// Array [] 
-
-
 //create map
 const map = L.map('mapid').setView([-9.6402969,-35.7066433], 16);
 
@@ -19,7 +10,7 @@ const icon = L.icon({
     iconUrl: "/images/map-marker.png",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
-    popupAnchor: [170, 2]
+    popupAnchor: [-3, -76]
 })
 
 function addMarker({id, name, lat, lng}) {
@@ -28,8 +19,8 @@ function addMarker({id, name, lat, lng}) {
     const popup= L.popup({
         closeButton: false,
         className: 'map-popup',
-        minWidth: 240, 
-        minHeight: 240
+        minWidth: 140, 
+        minHeight: 140
     }).setContent(`${name} <a href="orphanage?id=${id}"><img src="/images/arrow-white.svg"> </a>`)
 
     // create and add marker

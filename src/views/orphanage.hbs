@@ -18,8 +18,8 @@
     <link rel="icon" href="/images/logo-icon.png">
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/animations.css" />
-    <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/map.css" />
+     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
     <link rel="stylesheet" href="/css/page-orphanage.css" />
     <link 
@@ -29,20 +29,9 @@
   </head>
   
   <body>
-  
-    <div id="page-orphanage">
-      <aside class="animate-right sidebar">
-        <img src="/images/logo-icon.png" alt="Happy">
-        
-        <footer>
-          <button onclick="history.back()">
-            <img class="arrow2" src="/images/arrow-back.svg" alt="Back">
-          </button>
-        </footer>
-      </aside>
       
       <main class="animate-appear with-sidebar">
-        <div class="orphanage-details">
+        <div class="orphanage-details animate-right sidebar">
           <img src="{{orphanage.firstImage}}" alt="{{orphanage.name}}" />
 
           <div class="images">
@@ -72,7 +61,7 @@
             </div>
 
             <hr />
-            <h2> 🎁 Gifts Instructions </h2>
+            <h2> Gifts Instructions </h2>
             <p> {{orphanage.instructions}}</p>
 
             <div class="open-details">
@@ -106,6 +95,8 @@
               <img src="/images/whatsapp.svg" alt="Make a call on Whats App" />
               Get in touch
             </a>
+
+            <button class="secondary-button" onclick="history.back()"> Back </button>
             
 
           </div>

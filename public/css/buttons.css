@@ -20,10 +20,29 @@
     text-decoration: none;
 }
 
+.secondary-button {
+    margin-top: 2.4rem;
+    width: 100%;
+    height: 6.4rem;
+    border: none;
+    cursor: pointer;
+    background: #ff6666;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
+    text-decoration: none;
+}
+
 .primary-button:hover {
     background: #a10000;
-
 }
+
+.secondary-button:hover {
+    background: #a10000;
+}    
 
 .primary-button img {
     margin-right: 1.6rem;

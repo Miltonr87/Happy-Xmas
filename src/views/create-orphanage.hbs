@@ -18,7 +18,6 @@
     <link rel="icon" href="/images/logo-icon.png">
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="stylesheet" href="/css/animations.css" />
-    <link rel="stylesheet" href="/css/sidebar.css" />
     <link rel="stylesheet" href="/css/map.css" />
     <link rel="stylesheet" href="/css/form.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
@@ -30,19 +29,9 @@
   </head>
   
   <body>
-    <div id="page-create-orphanage">
-      <aside class="animate-right sidebar">
-        <img src="/images/logo-icon.png" alt="Happy Xmas">
-        
-        <footer>
-          <button onclick="history.back()">
-            <img class="arrow2" src="/images/arrow-back.svg" alt="Back">
-          </button>
-        </footer>
-      </aside>
       
-      <main class="animate-appear with-sidebar">
-        <form action="save-orphanage" method="post" onsubmit="validate(event)"> 
+      <main class="animate-appear">
+        <form action="save-orphanage animate-right sidebar" method="post" onsubmit="validate(event)"> 
           <fieldset>
             <legend> Data </legend>
 
@@ -116,6 +105,7 @@
                 </div>
                     
                   <button type="submit" class="primary-button"> Confirm </button>
+                  <button class="secondary-button" onclick="history.back()"> Back </button>
                     
                 </div>
                     

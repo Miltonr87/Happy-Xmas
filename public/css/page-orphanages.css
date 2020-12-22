@@ -69,7 +69,6 @@ a.create-orphanage:hover {
 .leaflet-popup-content {
     color: #ff6666;
     margin: .8rem 1.2rem;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -81,7 +80,6 @@ a.create-orphanage:hover {
     background: #ff6666;
     box-shadow: 17.2868px 27.6589px 41.4884px rgba(23, 142, 166, 0.16);
     border-radius: 12px;
-
     display: flex;
     align-items: center;
     justify-content: center;
