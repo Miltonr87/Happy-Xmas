@@ -1,6 +1,6 @@
 ### Happy Xmas
 
-![Screen Shot](Happy Xmas.png)
+![Screen Shot](https://github.com/Miltonr87/Happy-Xmas/blob/main/Happy%20Xmas.png)
 
 ### About
 
@@ -22,7 +22,7 @@ The Happy Xmas App runs on [Node.js](https://nodejs.org/), so before you can con
 
 ### Live Demo 
 
-- [Live Demo] (happy-xmas.herokuapp.com)
+- [Live Demo](happy-xmas.herokuapp.com)
 
 #### License
 
