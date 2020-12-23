@@ -4,7 +4,7 @@
 
 ### About
 
-The project was developed during the third edition of Rocketseat's Next Level Week in order to facilitate the search for orphanages to give gifts to children with general information such as opening hours and location. 
+The project was developed during the third edition of Rocketseat's Next Level Week held in October and updated for the Christmas period in order to search for orphanages and give gifts to childrens. Locations appears with general information. 
 
 ### Getting Started
 
