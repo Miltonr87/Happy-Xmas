@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Locate an orphanage | Happy Xmas</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin="" />
 
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""></script>
-      <!--Snow Effect -->
-      <script src="/scripts/xmas.js"></script>  
-    
-    <link rel="icon" href="/images/logo-icon.png">
-    
-    
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/animations.css" />
-    <link rel="stylesheet" href="/css/page-orphanages.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Locate an orphanage | Happy Xmas</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <!--Snow Effect -->
+  <script src="/scripts/xmas.js"></script>
+
+  <link rel="icon" href="/images/logo-icon.png">
 
 
-  </head>
-  
-  <body id="body">
-
-    <div id="page-orphanages">
-      <aside class="animate-right">
-        <header>
-          
-          <a class="animate-up" href="https://happy-xmas.herokuapp.com/"><img src="/images/logo-icon.png" alt="Happy"></a>
-          <h2> Choose an Orphanage </h2>
-          <p> Many children are waiting for gifts! </p>
-        </header>
-        <footer>
-          <strong> ©️Milton Rodrigues </strong>
-        </footer>
-      </aside>
-      
-  
-        <div id="mapid" class="animate-appear"> </div>
-          
-          <div class="orphanages">
-            
-            {{#each orphanages}}
-            
-            <span hidden 
-            data-id="{{this.id}}" 
-            data-name="{{this.name}}" 
-            data-lat="{{this.lat}}" 
-            data-lng="{{this.lng}}"></span>
-            
-            {{/each}}
-         
-          </div>
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/page-orphanages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 
-          <a href="create-orphanage" class="create-orphanage" title="Register an Orphanage">
-            <img src="/images/plus.svg" alt="Create Orphanage">
-      </a>  
+
+</head>
+
+<body id="body">
+
+  <div id="page-orphanages">
+    <aside class="animate-right">
+      <header>
+
+        <a class="animate-up" href="https://happy-xmas.herokuapp.com/"><img src="/images/logo-icon.png" alt="Happy"></a>
+        <h2> Choose an Orphanage </h2>
+        <p> Many children are waiting for gifts! </p>
+      </header>
+      <footer>
+        <strong> ©️Milton Rodrigues </strong>
+      </footer>
+    </aside>
+
+
+    <div id="mapid" class="animate-appear"> </div>
+
+    <div class="orphanages">
+
+      {{#each orphanages}}
+
+      <span hidden data-id="{{this.id}}" data-name="{{this.name}}" data-lat="{{this.lat}}"
+        data-lng="{{this.lng}}"></span>
+
+      {{/each}}
+
     </div>
+    
+    <a href="create-orphanage" class="create-orphanage" title="Register an Orphanage">
+      <img src="/images/plus.svg" alt="Create Orphanage">
+    </a>
+  </div>
 
-    
-    
- 
   <script src="/scripts/page-orphanages.js"></script>
-  </body>
+</body>
+
 </html>
