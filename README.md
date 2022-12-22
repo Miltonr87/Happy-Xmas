@@ -22,7 +22,7 @@ The Happy Xmas App runs on [Node.js](https://nodejs.org/), so before you can con
 
 ### Live Demo 
 
-- [Live Demo](https://happy-xmas.herokuapp.com/)
+- [Live Demo](https://happy-xmas.up.railway.app/)
 
 #### License
 
