@@ -2,7 +2,6 @@
 const express = require('express');
 const path = require('path');
 const pages = require('./pages.js');
-const hbs = require('hbs');
 
 const port = process.env.PORT || 3000;
 
@@ -10,7 +9,7 @@ const port = process.env.PORT || 3000;
 const server = express()
 server
     //utilizar body do req
-    .use(express.urlencoded({ extended:true }))
+    .use(express.urlencoded({ extended: true }))
 
     // utilizando os arquivos estáticos
     .use(express.static('public'))
@@ -26,9 +25,9 @@ server
     .get('/create-orphanage', pages.createOrphanage)
     .post('/save-orphanage', pages.saveOrphanage)
 
-
 // ligar o servidor na porta 5000
 server.listen(port, () => {
     console.log(`Server is up on port ${port}`);
-    });
+});
 
+// DEPLOY UPDATE (12-22-22) -> https://happy-xmas.up.railway.app/    
